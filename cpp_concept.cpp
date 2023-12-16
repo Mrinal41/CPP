@@ -688,34 +688,34 @@ int main()
 // second we create a instance of class in class it self using static as it can be access without object
 // Third we create a function that will return our in class instance when that get function is called
 
-class singleton
-{
-public:
-	static singleton& get()		// Third we create a function that will return our in class instance when that get function is called
-	{
-		return single;
-	}
+// class singleton
+// {
+// public:
+// 	static singleton& get()		// Third we create a function that will return our in class instance when that get function is called
+// 	{
+// 		return single;
+// 	}
 
-	void print()
-	{
-		cout<<"singleton is implemented "<<endl;
-	}
-private:
-	singleton()					// First of all we marked our constructor as private that will stop us to create instance of class
-	{
+// 	void print()
+// 	{
+// 		cout<<"singleton is implemented "<<endl;
+// 	}
+// private:
+// 	singleton()					// First of all we marked our constructor as private that will stop us to create instance of class
+// 	{
 
-	}
-	static singleton single;	// second we create a instance of class in class it self using static as it can be access without object
-};
+// 	}
+// 	static singleton single;	// second we create a instance of class in class it self using static as it can be access without object
+// };
 
-singleton singleton::single;
+// singleton singleton::single;
 
-int main()
-{
-	singleton::get().print();
-  //----instance---- --func--
-  // you cannot make an instance of the class you can only access the class using only singleton::get() i.e only one instance.
-}
+// int main()
+// {
+// 	singleton::get().print();
+//   ----instance---- --func--
+//  you cannot make an instance of the class you can only access the class using only singleton::get() i.e only one instance.
+// }
 
 
 
